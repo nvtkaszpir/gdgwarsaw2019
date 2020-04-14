@@ -34,7 +34,7 @@ from google.cloud import videointelligence
 def analyze_labels(path):
     """ Detects labels given a GCS path. """
     # [START video_label_tutorial_construct_request]
-    key_file = os.path.expanduser('~/key.json')
+    key_file = os.path.expanduser('../key.json')
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_file
     print(os.environ['DEVSHELL_PROJECT_ID'])
     credentials = service_account.Credentials.from_service_account_file(key_file)

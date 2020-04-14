@@ -4,6 +4,7 @@ export PROJECT_ID=$DEVSHELL_PROJECT_ID
 echo "project ID "$PROJECT_ID
 gcloud compute project-info add-metadata --metadata google-compute-default-region=us-central1,google-compute-default-zone=us-central1-b
 gcloud services enable automl.googleapis.com --project $PROJECT_ID
+gcloud services enable videointelligence.googleapis.com --project $PROJECT_ID
 gcloud services enable storage-component.googleapis.com --project $PROJECT_ID
 gcloud services enable storage-api.googleapis.com --project $PROJECT_ID
 gcloud iam service-accounts create service-account-amutoml --project $PROJECT_ID
